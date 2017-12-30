@@ -5,7 +5,7 @@ public class TelevisorStatus {
 
             Televisor televisor = new Televisor();
             //wyświetlenie początkowego statusu telewizora
-            System.out.println("Domyślnie wyłączony telewizor");
+            System.out.println("Status początkowy telewizora to: ");
             televisor.showStatus();
 
             //włączenie telewizora

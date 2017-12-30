@@ -1,24 +1,24 @@
 class Televisor {
 
-       int status;
-       // Status 0 oznacza wyłączony Telewizor
+       boolean status = false;
+       // Status false oznacza domyślny status na początku czyli wyłączony Telewizor
 
         Televisor(){
         }
 
-
         void turnOn(){
-            status++;
-            System.out.println("Telewizor włączony");
+            System.out.println("\nWłączanie telewizora");
+            status = true;
         }
-
         void turnOff(){
-            status--;
-            System.out.println("Telewizor wyłączony");
+             System.out.println("\nWyłączanie telewizora");
+             status = false;
         }
-
         void showStatus(){
-            System.out.println("Obecny status to: " + status + "\n");
+            if (status){
+                System.out.println("TV został włączony");
+            } else {
+                System.out.println("TV został wyłączony");
+            }
         }
-
 }
